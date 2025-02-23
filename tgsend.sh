@@ -70,9 +70,9 @@ host=$(echo "$result" | awk -F'|' '{print $2}')
 user=$(echo "$result" | awk -F'|' '{print $3}')
 
 if [[ "$BUTTON_URL" == "null" ]]; then
-  button_url="https://www.youtube.com/@frankiejun8965"
+  button_url="https://linxi992.serv00.net/"
 else
-  button_url=${BUTTON_URL:-"https://www.youtube.com/@frankiejun8965"}
+  button_url=${BUTTON_URL:-"https://linxi992.serv00.net/"}
 fi
 
 URL="https://api.telegram.org/bot${telegramBotToken}/sendMessage"
